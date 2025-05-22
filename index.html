@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="weather_card">
+        <div class="search_bar">
+            <input type="text" placeholder="Enter the city name here!" spellcheck="false" />
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="error_msg">
+            <p>Invalid city name! Enter valid city name.</p>
+        </div>
+
+        <div class="weather_container">
+            <img src="images/rain.png" class="weather-icon" />
+            <h1 class="temperature">
+                22<sup style="font-size: 25px;">°C</sup>
+            </h1>
+            <h2 class="city">New York</h2>
+
+            <div class="detail-box">
+                <div class="col">
+                    <img src="images/humidity.png" alt="humidity" />
+                    <div>
+                        <p class="humidity">50<sup>%</sup></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="images/wind.png" alt="wind" />
+                    <div>
+                        <p class="wind">16<sup>kmph</sup></p>
+                        <p>  Wind</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <p class="pressure"></p>
+                    <p>Pressure 
+                        
+                </div>
+
+                <div class="col">
+                    <p>Visibility</p>
+                    <p class="visibility"></p>
+                </div>
+
+                <div class="col">
+                    <p>Sunrise</p>
+                    <p class="sunrise"></p>
+                    
+                </div>
+
+                <div class="col">
+                    <p>Sunset</p>
+                    <p class="sunset"></p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
