@@ -12,7 +12,7 @@ const weatherContainer = document.querySelector(".weather_container");
 
 const detailBox = document.querySelector(".detail-box");
 
-const pressureDesc = document.querySelector(".pressure");
+// const pressureDesc = document.querySelector(".pressure");
 const visibilityDesc = document.querySelector(".visibility");
 const sunriseDesc = document.querySelector(".sunrise");
 const sunsetDesc = document.querySelector(".sunset");
@@ -28,8 +28,8 @@ function updateWeatherUI(data) {
 
 
 
-  pressureDesc.textContent = `${data.main.pressure} `;
-  visibilityDesc.textContent = `${data.visibility / 1000} km`;
+  document.querySelector(".pressure").innerHTML = `${data.main.pressure} <sup>hPa</sup>`;
+  visibilityDesc.innerHTML = `${data.visibility / 1000} <sup>km</sup>`;
   sunriseDesc.textContent = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
   sunsetDesc.textContent = new Date(data.sys.sunset * 1000).toLocaleTimeString();
 

@@ -27,7 +27,7 @@ function updateWeatherUI(data) {
 
 
 
-  pressureDesc.textContent = `${data.main.pressure} `;
+  pressureDesc.innerHTML = `${data.main.pressure}<sup>hPa</sup> `;
   visibilityDesc.textContent = `${data.visibility / 1000} km`;
   sunriseDesc.textContent = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
   sunsetDesc.textContent = new Date(data.sys.sunset * 1000).toLocaleTimeString();
