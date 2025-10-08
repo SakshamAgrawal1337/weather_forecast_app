@@ -1,5 +1,5 @@
 
-const apiKey = "ca22a3468ac89c8d13db3310939c5de8";
+const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&appid=" + apiKey;
 
 const search_box = document.querySelector(".search_bar input");
@@ -38,7 +38,7 @@ function updateWeatherUI(data) {
   }, 500);
 
   const mainWeather = data.weather[0].main;
-  weatherIcon.src = `images/${mainWeather.toLowerCase()}.png`;
+  weatherIcon.src = `src/images/${mainWeather.toLowerCase()}.png`;
   weatherCard.className = `weather_card ${mainWeather.toLowerCase()}`;
   body.className = mainWeather.toLowerCase();
 

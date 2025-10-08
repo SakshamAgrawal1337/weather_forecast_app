@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App Web Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -22,7 +23,7 @@
         </div>
 
         <div class="weather_container">
-            <img src="images/rain.png" class="weather-icon" />
+            <img src="src/images/rain.png" class="weather-icon" />
             <h1 class="temperature">
                 22<sup style="font-size: 25px;">°C</sup>
             </h1>
@@ -30,7 +31,7 @@
 
             <div class="detail-box">
                 <div class="col">
-                    <img src="images/humidity.png" alt="humidity" />
+                    <img src="src/images/humidity.png" alt="humidity" />
                     <div>
                         <p class="humidity">50<sup>%</sup></p>
                         <p>Humidity</p>
@@ -38,7 +39,7 @@
                 </div>
 
                 <div class="col">
-                    <img src="images/wind.png" alt="wind" />
+                    <img src="src/images/wind.png" alt="wind" />
                     <div>
                         <p class="wind"></p>
                         <p>  Wind</p>
@@ -46,14 +47,14 @@
                 </div>
 
                 <div class="col">
-                    <img src="images/pressure.png" alt="pressure" />
+                    <img src="src/images/pressure.png" alt="pressure" />
                     
                     <p> Pressure: </p>  <p class="pressure "></p>
                         
                 </div>
                    
                 <div class="col">
-                     <img src="images/visibility.png" alt="visibility" />
+                     <img src="src/images/visibility.png" alt="visibility" />
 
                     <p>Visibility:</p>
                     <p class="visibility"></p>
@@ -74,6 +75,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script  type="module" src="src/main.js"></script>
 </body>
 </html>
